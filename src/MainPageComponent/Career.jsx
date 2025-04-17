@@ -280,6 +280,98 @@ const Career = () => {
               </CardContent>
             </Card>
           </Grid>
+          <Grid item xs={12} md={6}>
+            <Card
+              sx={{
+                marginTop: "30px",
+                height: "100%",
+                transition: "transform 0.3s ease-in-out", // Smooth transition
+                "&:hover": {
+                  transform: "scale(1.05)", // Zoom effect on hover
+                },
+              }}
+            >
+              <CardContent>
+                <Typography variant="h5">
+                  Architectural Designer / Junior Architect
+                </Typography>
+                <Typography variant="body2">
+                  Location: On-site / Hybrid (Based in Mumbai)
+                </Typography>
+                <Typography variant="body2">Experience: 1-2 years</Typography>
+
+                <Typography variant="body1" sx={{ mt: 2 }}>
+                  <strong>Key Responsibilities:</strong>
+                  <ul>
+                    <li>
+                      Assist in designing residential, commercial, and
+                      institutional projects from concept through execution
+                    </li>
+                    <li>
+                      Create detailed architectural drawings, 3D models, and
+                      presentation materials
+                    </li>
+                    <li>
+                      Coordinate with consultants, contractors, and vendors to
+                      ensure timely delivery of projects
+                    </li>
+                    <li>
+                      Conduct site visits to monitor progress and ensure design
+                      intent is implemented accurately
+                    </li>
+                    <li>
+                      Stay informed about building codes, sustainable practices,
+                      and materials
+                    </li>
+                    <li>
+                      Contribute innovative design ideas and collaborate with
+                      senior architects and clients
+                    </li>
+                  </ul>
+                </Typography>
+
+                <Typography variant="body1" sx={{ mt: 2 }}>
+                  <strong>Requirements:</strong>
+                  <ul>
+                    <li>Bachelor’s degree in Architecture or related field</li>
+                    <li>
+                      1-2 years of professional experience in architectural
+                      design
+                    </li>
+                    <li>
+                      Proficiency in AutoCAD, SketchUp, Revit, and Adobe
+                      Creative Suite
+                    </li>
+                    <li>
+                      Strong 3D visualization and rendering skills (Lumion,
+                      V-Ray, etc.)
+                    </li>
+                    <li>
+                      Excellent communication, design thinking, and
+                      problem-solving abilities
+                    </li>
+                    <li>
+                      Understanding of construction techniques and documentation
+                    </li>
+                    <li>
+                      Passion for design innovation, attention to detail, and
+                      spatial planning
+                    </li>
+                  </ul>
+                </Typography>
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleOpenModal}
+                  sx={{ mt: 2 }}
+                >
+                  Apply Now
+                </Button>
+                <ApplyNowModal open={openModal} handleClose={handleClose} />
+              </CardContent>
+            </Card>
+          </Grid>
 
           <Grid item xs={12} md={6}>
             <Card
