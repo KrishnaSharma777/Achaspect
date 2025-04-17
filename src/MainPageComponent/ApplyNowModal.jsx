@@ -51,6 +51,7 @@ const ApplyNowModal = ({ open, handleClose }) => {
     } else setResumeError(false);
 
     if (!isValid) {
+      handleClose(); // Close the modal on error
       Swal.fire({
         icon: "warning",
         title: "Incomplete form",
@@ -81,6 +82,7 @@ const ApplyNowModal = ({ open, handleClose }) => {
         });
         handleClose(); // Close the modal after success
       } else {
+        handleClose(); // Close the modal on error
         Swal.fire({
           icon: "error",
           title: "Error",
@@ -88,6 +90,7 @@ const ApplyNowModal = ({ open, handleClose }) => {
         });
       }
     } catch (error) {
+      handleClose(); // Close the modal on error
       Swal.fire({
         icon: "error",
         title: "Error",
@@ -109,7 +112,8 @@ const ApplyNowModal = ({ open, handleClose }) => {
             <CardContent>
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={2}>
-                  <Grid item xs={12}>
+                  {/* Full Name */}
+                  <Grid item xs={12} sm={6}>
                     <TextField
                       label="Full Name"
                       variant="outlined"
@@ -128,7 +132,9 @@ const ApplyNowModal = ({ open, handleClose }) => {
                       }}
                     />
                   </Grid>
-                  <Grid item xs={12}>
+
+                  {/* Email */}
+                  <Grid item xs={12} sm={6}>
                     <TextField
                       label="Email"
                       variant="outlined"
@@ -148,6 +154,8 @@ const ApplyNowModal = ({ open, handleClose }) => {
                       }}
                     />
                   </Grid>
+
+                  {/* Resume Upload */}
                   <Grid item xs={12}>
                     <input
                       accept=".pdf,.doc,.docx"
