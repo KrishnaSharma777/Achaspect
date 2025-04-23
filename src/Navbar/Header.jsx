@@ -9,7 +9,7 @@ import {
   MenuItem,
 } from "@mui/material";
 
-import logo from "../assets/image/image.svg"; // Adjust the path as necessary
+import logo from "../assets/image/Artboard.svg"; // Adjust the path as necessary
 import { Menu } from "@mui/icons-material";
 import { keyframes } from "@mui/system";
 
@@ -22,6 +22,21 @@ const blinkAnimation = keyframes`
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const location = useLocation(); // Detects route changes
+
+  const currentPath = location.pathname;
+
+  const getLinkStyle = (path) => ({
+    color: currentPath === path ? "blue" : "#0b2747",
+    display: "flex",
+    alignItems: "center",
+    textDecoration: "none",
+    padding: "8px 12px",
+    borderRadius: "4px",
+    fontWeight: "700",
+    fontFamily: "Roboto, sans-serif",
+    transition: "all 0.3s ease",
+    transform: currentPath === path ? "scale(1.1)" : "scale(1)",
+  });
 
   // Function to scroll to top of the page
   const scrollToTop = () => {
@@ -62,7 +77,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              style={{ width: "100px", height: "100px" }}
+              style={{ width: "90%", height: "90%" }}
             />
           </Link>
           <IconButton
@@ -71,7 +86,7 @@ const Header = () => {
             onClick={handleMenu}
             sx={{
               display: { xs: "block", md: "none" },
-              color: "#0b2747",
+              // color: "#0b2747",
               padding: "8px",
             }}
           >
@@ -91,7 +106,9 @@ const Header = () => {
                 to="/"
                 onClick={scrollToTop}
                 style={{
-                  color: "#0b2747",
+                  ...getLinkStyle("/"), // spread the result of your function
+
+                  // color: "#0b2747",
                   display: "flex",
                   alignItems: "center",
                   animation: `${blinkAnimation} 1s infinite`,
@@ -105,41 +122,44 @@ const Header = () => {
                 to="/about-us"
                 onClick={scrollToTop}
                 style={{
-                  color: "#0b2747",
+                  ...getLinkStyle("/about-us"), // spread the result of your function
+
+                  // color: "#0b2747",
                   display: "flex",
                   alignItems: "center",
                   animation: `${blinkAnimation} 1s infinite`,
                 }}
               >
-                ABOUT US
+                ABOUT
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <Link
-                to="/apply-now"
+                to="/services"
                 onClick={scrollToTop}
                 style={{
-                  color: "#0b2747",
+                  ...getLinkStyle("/services"), // spread the result of your function
+                  // color: "#0b2747",
                   display: "flex",
                   alignItems: "center",
                   animation: `${blinkAnimation} 1s infinite`,
                 }}
               >
-                APPLY NOW
+                SERVICES
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <Link
-                to="/repay-now"
+                to="/portfolio"
                 onClick={scrollToTop}
                 style={{
-                  color: "#0b2747",
+                  // color: "#0b2747",
                   display: "flex",
                   alignItems: "center",
                   animation: `${blinkAnimation} 1s infinite`,
                 }}
               >
-                REPAY NOW
+                PORTFOLIO
               </Link>
             </MenuItem>
             <MenuItem onClick={handleClose}>
@@ -147,13 +167,30 @@ const Header = () => {
                 to="/contact-us"
                 onClick={scrollToTop}
                 style={{
-                  color: "#0b2747",
+                  ...getLinkStyle("/contact-us"), // spread the result of your function
+
+                  // color: "#0b2747",
                   display: "flex",
                   alignItems: "center",
                   animation: `${blinkAnimation} 1s infinite`,
                 }}
               >
                 CONTACT US
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link
+                to="/career"
+                onClick={scrollToTop}
+                style={{
+                  ...getLinkStyle("/career"), // spread the result of your function
+                  // color: "#0b2747",
+                  display: "flex",
+                  alignItems: "center",
+                  animation: `${blinkAnimation} 1s infinite`,
+                }}
+              >
+                CAREER
               </Link>
             </MenuItem>
           </MUI_Menu>
@@ -170,7 +207,8 @@ const Header = () => {
               to="/"
               onClick={scrollToTop}
               style={{
-                color: "#0b2747",
+                ...getLinkStyle("/"), // spread the result of your function
+                // color: "#0b2747",
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
@@ -184,7 +222,8 @@ const Header = () => {
               to="/about-us"
               onClick={scrollToTop}
               style={{
-                color: "#0b2747",
+                ...getLinkStyle("/about-us"), // spread the result of your function
+                // color: "#0b2747",
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
@@ -192,13 +231,14 @@ const Header = () => {
                 transition: "color 0.3s ease",
               }}
             >
-              ABOUT US
+              ABOUT
             </Link>
             <Link
-              to="/apply-now"
+              to="/services"
               onClick={scrollToTop}
               style={{
-                color: "#0b2747",
+                ...getLinkStyle("/services"), // spread the result of your function
+                // color: "#0b2747",
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
@@ -206,13 +246,30 @@ const Header = () => {
                 transition: "color 0.3s ease",
               }}
             >
-              APPLY NOW
+              SERVICES
             </Link>
+            <Link
+              to="/portfolio"
+              onClick={scrollToTop}
+              style={{
+                ...getLinkStyle("/portfolio"), // spread the result of your function
+                // color: "#0b2747",
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+                padding: "8px",
+                transition: "color 0.3s ease",
+              }}
+            >
+              PORTFOLIO
+            </Link>
+
             <Link
               to="/career"
               onClick={scrollToTop}
               style={{
-                color: "#0b2747",
+                ...getLinkStyle("/career"), // spread the result of your function
+                // color: "#0b2747",
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
@@ -226,7 +283,8 @@ const Header = () => {
               to="/contact-us"
               onClick={scrollToTop}
               style={{
-                color: "#0b2747",
+                ...getLinkStyle("/contact-us"), // spread the result of your function
+                // color: "#0b2747",
                 display: "flex",
                 alignItems: "center",
                 textDecoration: "none",
@@ -234,7 +292,7 @@ const Header = () => {
                 transition: "color 0.3s ease",
               }}
             >
-              CONTACT US
+              CONTACT
             </Link>
           </Box>
         </Toolbar>
