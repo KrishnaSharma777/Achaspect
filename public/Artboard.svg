@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 879.83 249.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cc7228;
+      }
+
+      .cls-2 {
+        fill: #102e50;
+      }
+
+      .cls-3 {
+        font-family: ArialMT, Arial;
+        font-size: 61.64px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #231f20;
+      }
+
+      .cls-5 {
+        fill: #edb11f;
+      }
+
+      .cls-4 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 114.47px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-1" points="98.03 116.88 11.07 165.77 10.09 61.95 97.75 12.5 98.03 116.88"/>
+    <polygon class="cls-2" points="112.83 237.47 11.4 179.59 94.29 132.94 197.41 188.02 112.83 237.47"/>
+    <polygon class="cls-5" points="212.4 179.12 110.96 124.89 110.96 12.5 212.11 71.5 212.4 179.12"/>
+  </g>
+  <g>
+    <text class="cls-4" transform="translate(246.26 127.94)"><tspan x="0" y="0">Archaspect</tspan></text>
+    <text class="cls-3" transform="translate(246.26 200.21)"><tspan x="0" y="0">sustainable spaces</tspan></text>
+  </g>
+</svg>
