@@ -24,7 +24,7 @@ const slideFromRight = keyframes`
   }
 `;
 
-const ImageSlider = ({ images, duration = 5000 }) => {
+const ImageSlider = ({ images, duration = 4000 }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -36,20 +36,26 @@ const ImageSlider = ({ images, duration = 5000 }) => {
 
   const textOverlays = [
     {
-      text1: "Transforming Spaces with Vision",
+      text1: "Kanhabar Mandir",
       text2:
         "Crafting innovative and functional designs tailored to your lifestyle and purpose",
     },
     {
-      text1: "Designs that Inspire, Structures that Last",
+      text1: "Gandhi Park in Jaura",
       text2:
         "From concept to completion, we bring your architectural dreams to life",
     },
     {
+      text1: "Jaura Shopping Complex",
+      text2:
+        "With sustainable solutions, modern aesthetics, and thoughtful planning",
+    },
+     {
       text1: "Shaping the Future of Architecture",
       text2:
         "With sustainable solutions, modern aesthetics, and thoughtful planning",
     },
+    
   ];
 
   return (
@@ -87,12 +93,12 @@ const ImageSlider = ({ images, duration = 5000 }) => {
               <Box
                 sx={{
                   position: "absolute",
-                  bottom: { xs: "10%", md: "40%" },
+                  bottom: { xs: "10%", md: "10%" },
                   left: "20px",
-                  color: "#123e71",
+                  color: "#fafafa",
                   textAlign: "left",
-                  fontSize: { xs: "1.1rem", md: "2.2rem" },
-                  padding: "10px",
+                  fontSize: { xs: "2rem", md: "3rem" },
+                  padding: "30px",
                   lineHeight: 1.2,
                   fontWeight: "bold",
                   textShadow: "3px 3px 5px rgba(255, 255, 255, 0.7)",
