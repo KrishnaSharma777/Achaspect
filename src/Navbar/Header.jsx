@@ -86,7 +86,7 @@ const Header = () => {
             onClick={handleMenu}
             sx={{
               display: { xs: "block", md: "none" },
-              // color: "#0b2747",
+              color: "#020911",
               padding: "8px",
             }}
           >
@@ -133,7 +133,7 @@ const Header = () => {
                 ABOUT
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>
+            {/* <MenuItem onClick={handleClose}>
               <Link
                 to="/services"
                 onClick={scrollToTop}
@@ -147,8 +147,8 @@ const Header = () => {
               >
                 SERVICES
               </Link>
-            </MenuItem>
-            <MenuItem onClick={handleClose}>
+            </MenuItem> */}
+            {/* <MenuItem onClick={handleClose}>
               <Link
                 to="/portfolio"
                 onClick={scrollToTop}
@@ -161,7 +161,7 @@ const Header = () => {
               >
                 PORTFOLIO
               </Link>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem onClick={handleClose}>
               <Link
                 to="/contact-us"
@@ -178,7 +178,7 @@ const Header = () => {
                 CONTACT US
               </Link>
             </MenuItem>
-            <MenuItem onClick={handleClose}>
+            {/* <MenuItem onClick={handleClose}>
               <Link
                 to="/career"
                 onClick={scrollToTop}
@@ -192,7 +192,7 @@ const Header = () => {
               >
                 CAREER
               </Link>
-            </MenuItem>
+            </MenuItem> */}
           </MUI_Menu>
           <Box
             sx={{
@@ -233,7 +233,7 @@ const Header = () => {
             >
               ABOUT
             </Link>
-            <Link
+            {/* <Link
               to="/services"
               onClick={scrollToTop}
               style={{
@@ -247,8 +247,8 @@ const Header = () => {
               }}
             >
               SERVICES
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/portfolio"
               onClick={scrollToTop}
               style={{
@@ -262,7 +262,7 @@ const Header = () => {
               }}
             >
               PORTFOLIO
-            </Link>
+            </Link> */}
 
             <Link
               to="/career"
