@@ -1,29 +1,36 @@
 import React from "react";
 import { Typography, Grid, Container, Box } from "@mui/material";
 
-import Img2 from "../assets/image/banner1.png";
-import Img4 from "../assets/image/banner2.png";
-import Img3 from "../assets/image/banner3.png";
+import aboutImage from "../assets/image/About.png";
 
-import ImageSlider from "./ImageSlider";
 
-const images = [
-  { src: Img2, alt: "Image 1" },
-  { src: Img4, alt: "Image 2" },
-  { src: Img3, alt: "Image 3" },
-];
+
+
 
 const AboutUs = () => {
   return (
     <>
       <Box
-        position="relative"
-        width="100%"
-        textAlign="center"
-        sx={{ mt: 0, height: "100vh" }}
-      >
-        <ImageSlider images={images} />
-      </Box>
+             sx={{
+               position: "relative",
+               width: "100vw",
+               height: "100vh",
+               overflow: "hidden",
+             }}
+           >
+             <Box
+               component="img"
+               src={aboutImage}
+               alt="About Us"
+               sx={{
+                 width: "100%",
+                 height: "100%",
+                 objectFit: "cover", // Ensures it covers the full area
+                 display: "block",
+               }}
+             />
+           </Box>
+     
 
       {/* About Section in Full Container */}
       <Box py={8} sx={{ backgroundColor: "#f9f9f9" }}>

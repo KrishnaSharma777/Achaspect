@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import axios from "axios";
 import { TextField, Button, Grid, Typography, Box } from "@mui/material";
 import Swal from "sweetalert2";
-import aboutImage from "../assets/image/Contact-Us.jpg";
+import aboutImage from "../assets/image/reachout.png";
 
 const ContactUs = () => {
   //   const [formData, setFormData] = useState({

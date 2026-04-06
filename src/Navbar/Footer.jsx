@@ -105,7 +105,7 @@ const Footer = () => {
                   <i className="fa fa-angle-right" /> Contact
                 </Link>
 
-                <li>
+                {/* <li>
                   <Link href="career" color="inherit" sx={linkStyle}>
                     <i className="fa fa-angle-right" /> career
                   </Link>
@@ -119,14 +119,14 @@ const Footer = () => {
                       <i className="fa fa-angle-right" /> portfolio
                     </Link>
                   </li>
-                </li>
+                </li> */}
               </li>
             </ul>
           </Grid>
 
           {/* Links Section 2 */}
           <Grid item xs={12} md={3}>
-            <ul style={{ listStyleType: "none", padding: 0, margin: "20px" }}>
+            {/* <ul style={{ listStyleType: "none", padding: 0, margin: "20px" }}>
               <li>
                 <Link href="terms-condition" color="inherit" sx={linkStyle}>
                   <i className="fa fa-angle-right" /> Terms & Conditions
@@ -143,7 +143,7 @@ const Footer = () => {
                   <i className="fa fa-angle-right" /> FAQs
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </Grid>
 
           {/* Social Media Section */}
