@@ -22,3 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+// fire base  service account key 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDt51J5m6fUWm4RMETIBf8uhpb4l5TkrTA",
+  authDomain: "archaspect-a8e09.firebaseapp.com",
+  projectId: "archaspect-a8e09",
+  storageBucket: "archaspect-a8e09.firebasestorage.app",
+  messagingSenderId: "644830965082",
+  appId: "1:644830965082:web:a6b43ccfbfa423f16c5763",
+  measurementId: "G-4YPT8SV7ZL"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
