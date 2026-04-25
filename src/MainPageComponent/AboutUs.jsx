@@ -10,27 +10,32 @@ import aboutImage from "../assets/image/About.png";
 const AboutUs = () => {
   return (
     <>
-      <Box
-             sx={{
-               position: "relative",
-               width: "100vw",
-               height: "100vh",
-               overflow: "hidden",
-             }}
-           >
-             <Box
-               component="img"
-               src={aboutImage}
-               alt="About Us"
-               sx={{
-                 width: "100%",
-                 height: "100%",
-                 objectFit: "cover", // Ensures it covers the full area
-                 display: "block",
-               }}
-             />
-           </Box>
-     
+   <Box
+  sx={{
+    position: "relative",
+    width: "100%",
+    height: {
+      xs: "40vh",   // exact mobile size (414x896)
+      sm: "60vh",
+      md: "60vh",
+      lg: "170vh",
+    },
+    maxHeight: "100vh",
+    overflow: "hidden",
+  }}
+>
+  <Box
+    component="img"
+    src={aboutImage}
+    alt="About Us"
+    sx={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      display: "block",
+    }}
+  />
+</Box>
 
       {/* About Section in Full Container */}
       <Box py={8} sx={{ backgroundColor: "#f9f9f9" }}>

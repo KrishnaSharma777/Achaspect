@@ -60,78 +60,122 @@ const ImageSlider = ({ images, duration = 4000 }) => {
 
   return (
     <Box
-      sx={{
-        overflow: "hidden",
-        display: "flex",
-        height: { xs: "25vh", md: "100vh" },
-        position: "relative",
-      }}
-    >
-      <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
-        {images.map((image, index) => (
+  sx={{
+    overflow: "hidden",
+    display: "flex",
+    position: "relative",
+    width: "100%",
+    height: {
+      xs: "45svh",   // 🔥 mobile safe height
+      sm: "55vh",
+      md: "70vh",
+      lg: "85vh",
+      xl: "1vh",
+    },
+  }}
+>
+  <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
+    {images.map((image, index) => (
+      <Box
+        key={index}
+        sx={{
+          position: "absolute",
+          inset: 0,
+          opacity: currentImage === index ? 1 : 0,
+          transform: currentImage === index ? "scale(1)" : "scale(1.05)",
+          transition: "opacity 0.6s ease-in-out, transform 1.5s ease-in-out",
+          zIndex: currentImage === index ? 1 : 0,
+        }}
+      >
+        {/* Image */}
+        <Box
+          component="img"
+          src={image.src}
+          alt={image.alt}
+          sx={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
+
+        {/* Overlay (for readability 🔥) */}
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            background: "rgba(0,0,0,0.3)",
+          }}
+        />
+
+        {/* Text Content */}
+        {currentImage === index && (
           <Box
-            key={index}
             sx={{
               position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              opacity: currentImage === index ? 1 : 0,
-              transform: currentImage === index ? "scale(1)" : "scale(1.1)",
-              transition: "opacity 0.5s ease-in-out, transform 2s ease-in-out",
-              zIndex: currentImage === index ? 1 : 0,
+              bottom: {
+                xs: "10%",
+                sm: "12%",
+                md: "15%",
+              },
+              left: {
+                xs: "50%",
+                md: "40px",
+              },
+              transform: {
+                xs: "translateX(-50%)",
+                md: "none",
+              },
+              textAlign: {
+                xs: "center",
+                md: "left",
+              },
+              color: "#fff",
+              px: { xs: 2, md: 4 },
+              maxWidth: { md: "600px" },
             }}
           >
-            <Box
-              component="img"
-              src={image.src}
-              alt={image.alt}
-              sx={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
-            {currentImage === index && (
-              <Box
-                sx={{
-                  position: "absolute",
-                  bottom: { xs: "10%", md: "10%" },
-                  left: "20px",
-                  color: "#fafafa",
-                  textAlign: "left",
-                  fontSize: { xs: "2rem", md: "3rem" },
-                  padding: "30px",
-                  lineHeight: 1.2,
-                  fontWeight: "bold",
-                  textShadow: "3px 3px 5px rgba(255, 255, 255, 0.7)",
-                  zIndex: 10,
-                  transform: { xs: "translateY(50%)", md: "none" },
-                }}
-              >
-                <Typography
-                  component="div"
-                  sx={{
-                    animation: `${slideFromLeft} 1s forwards`,
-                    animationDelay: "0.5s",
-                    opacity: 0,
-                  }}
-                >
-                  {textOverlays[index]?.text1}
-                </Typography>
-                <Typography
-                  component="div"
-                  sx={{
-                    animation: `${slideFromRight} 1s forwards`,
-                    animationDelay: "1s",
-                    opacity: 0,
-                  }}
-                >
-                  {textOverlays[index]?.text2}
-                </Typography>
-              </Box>
-            )}
+            <Typography
+              sx={{
+                fontWeight: "bold",
+                lineHeight: 1.2,
+                fontSize: {
+                  xs: "18px",
+                  sm: "22px",
+                  md: "32px",
+                  lg: "40px",
+                },
+                animation: `${slideFromLeft} 1s forwards`,
+                animationDelay: "0.3s",
+                opacity: 0,
+              }}
+            >
+              {textOverlays[index]?.text1}
+            </Typography>
+
+            <Typography
+              sx={{
+                mt: 1,
+                fontWeight: 400,
+                fontSize: {
+                  xs: "14px",
+                  sm: "16px",
+                  md: "20px",
+                },
+                animation: `${slideFromRight} 1s forwards`,
+                animationDelay: "0.6s",
+                opacity: 0,
+              }}
+            >
+              {textOverlays[index]?.text2}
+            </Typography>
           </Box>
-        ))}
+        )}
       </Box>
-    </Box>
+    ))}
+  </Box>
+</Box>
   );
 };
 

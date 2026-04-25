@@ -264,7 +264,7 @@ const Header = () => {
               PORTFOLIO
             </Link> */}
 
-            <Link
+            {/* <Link
               to="/career"
               onClick={scrollToTop}
               style={{
@@ -278,7 +278,7 @@ const Header = () => {
               }}
             >
               CAREER
-            </Link>
+            </Link> */}
             <Link
               to="/contact-us"
               onClick={scrollToTop}
