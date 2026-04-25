@@ -23,14 +23,14 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/career" element={<Career />} />
-          {/* <Route path="/portfolio" element={<Portfolio/>}/> */}
-                  {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/portfolio" element={<Portfolio/>}/>
+                  <Route path="/dashboard" element={<Dashboard />} />
 
         </Routes>
         <Footer />
-        {/* <Test/> */}
+        <Test/>
 
-        {/* <AdminPannel /> */}
+        <AdminPannel />
         <MarqueeAlert />
       </Router>
     </>

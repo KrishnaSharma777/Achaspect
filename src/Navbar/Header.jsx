@@ -148,7 +148,7 @@ const Header = () => {
                 SERVICES
               </Link>
             </MenuItem> */}
-            {/* <MenuItem onClick={handleClose}>
+            <MenuItem onClick={handleClose}>
               <Link
                 to="/portfolio"
                 onClick={scrollToTop}
@@ -161,7 +161,7 @@ const Header = () => {
               >
                 PORTFOLIO
               </Link>
-            </MenuItem> */}
+            </MenuItem>
             <MenuItem onClick={handleClose}>
               <Link
                 to="/contact-us"
@@ -248,7 +248,7 @@ const Header = () => {
             >
               SERVICES
             </Link> */}
-            {/* <Link
+            <Link
               to="/portfolio"
               onClick={scrollToTop}
               style={{
@@ -262,7 +262,7 @@ const Header = () => {
               }}
             >
               PORTFOLIO
-            </Link> */}
+            </Link>
 
             {/* <Link
               to="/career"
