@@ -7,7 +7,8 @@ import {
   Paper,
   Modal,
 } from "@mui/material";
-import { db, storage } from "./firebase";
+import { db } from "./firebase";
+import { uploadToCloudinary } from "./utils/cloudinaryUpload";
 import {
   collection,
   addDoc,
@@ -16,11 +17,7 @@ import {
   doc,
   onSnapshot,
 } from "firebase/firestore";
-import {
-  ref,
-  uploadBytes,
-  getDownloadURL,
-} from "firebase/storage";
+
 
 import { useDropzone } from "react-dropzone";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
@@ -65,25 +62,37 @@ const AdminPanel = () => {
   };
 
   // 🔥 Upload
-  const handleUpload = async () => {
+ const handleUpload = async () => {
+  if (!form.title || !form.category || images.length === 0) {
+    alert("Fill all fields");
+    return;
+  }
+
+  try {
     let urls = [];
 
+    // 🔥 Upload to Cloudinary
     for (let img of images) {
-      const storageRef = ref(storage, `projects/${Date.now()}-${img.name}`);
-      await uploadBytes(storageRef, img);
-      const url = await getDownloadURL(storageRef);
+      const url = await uploadToCloudinary(img);
       urls.push(url);
     }
 
+    // 🔥 Save to Firestore
     await addDoc(collection(db, "projects"), {
       ...form,
       images: urls,
+      createdAt: new Date(),
     });
 
     alert("Added ✅");
+
     setImages([]);
     setForm({ title: "", category: "", description: "" });
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Upload failed ❌");
+  }
+};
 
   // 🔥 Delete
   const handleDelete = async (id) => {
@@ -152,8 +161,8 @@ const AdminPanel = () => {
 
         {/* 🔥 IMAGE REORDER */}
         <DragDropContext onDragEnd={handleDrag}>
-          <Droppable droppableId="images" direction="horizontal">
-            {(provided) => (
+<Droppable droppableId="images" direction="horizontal" isDropDisabled={false}>
+              {(provided) => (
               <Box
                 ref={provided.innerRef}
                 {...provided.droppableProps}
@@ -179,10 +188,11 @@ const AdminPanel = () => {
             )}
           </Droppable>
         </DragDropContext>
+        <Button variant="contained" onClick={handleUpload} sx={{ mt: 2 }}>
+  Upload Project 🚀
+</Button>
 
-        <Button onClick={handleUpload} sx={{ mt: 2 }}>
-          Upload
-        </Button>
+       
       </Paper>
 
       {/* 🔥 PROJECT LIST */}

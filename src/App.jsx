@@ -12,6 +12,7 @@ import ContactUs from "./MainPageComponent/ContactUs";
 // import Test from "./MainPageComponent/Test";
 import AdminPannel from "./AdminPannel";
 import Portfolio from "./pages/Portfolio";
+import ProjectDetail from "./pages/ProjectDetail";
 import Dashboard from "./Dashboard";
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/career" element={<Career />} />
           <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/project/:id" element={<ProjectDetail />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/admin" element={<AdminPannel />} />
                    {/* <AdminPannel /> */}
