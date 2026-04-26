@@ -9,7 +9,7 @@ import MarqueeAlert from "./Navbar/MarqeeAlert";
 import Career from "./MainPageComponent/Career";
 import AboutUs from "./MainPageComponent/AboutUs";
 import ContactUs from "./MainPageComponent/ContactUs";
-import Test from "./MainPageComponent/Test";
+// import Test from "./MainPageComponent/Test";
 import AdminPannel from "./AdminPannel";
 import Portfolio from "./pages/Portfolio";
 import Dashboard from "./Dashboard";
@@ -25,12 +25,14 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/portfolio" element={<Portfolio/>}/>
                   <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/admin" element={<AdminPannel />} />
+                   {/* <AdminPannel /> */}
 
         </Routes>
         <Footer />
-        <Test/>
+        {/* <Test/> */}
 
-        <AdminPannel />
+       
         <MarqueeAlert />
       </Router>
     </>
