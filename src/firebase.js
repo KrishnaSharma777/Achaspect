@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
+
 
 // 👇 yaha apna firebaseConfig paste karo
 
@@ -20,3 +22,4 @@ const app = initializeApp(firebaseConfig);
 // 🔥 ye export karna zaroori hai
 export const db = getFirestore(app);
 export const storage = getStorage(app);
+export const auth = getAuth(app);

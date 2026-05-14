@@ -68,23 +68,23 @@ const AdminPanel = () => {
     return;
   }
 
-  try {
-    let urls = [];
+ try {
+  let urls = [];
 
-    // 🔥 Upload to Cloudinary
-    for (let img of images) {
-      const url = await uploadToCloudinary(img);
-      urls.push(url);
-    }
+  for (let img of images) {
+    const url = await uploadToCloudinary(img);
+    urls.push(url);
+  }
 
-    // 🔥 Save to Firestore
-    await addDoc(collection(db, "projects"), {
-      ...form,
-      images: urls,
-      createdAt: new Date(),
-    });
+  // 👇 YAHI PAR CHANGE KARNA HAI
+  await addDoc(collection(db, "projects"), {
+    ...form,
+    coverImage: urls[0],
+    images: urls,
+    createdAt: new Date(),
+  });
 
-    alert("Added ✅");
+  alert("Added ✅");
 
     setImages([]);
     setForm({ title: "", category: "", description: "" });

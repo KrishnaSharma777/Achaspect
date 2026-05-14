@@ -105,21 +105,21 @@ const Footer = () => {
                   <i className="fa fa-angle-right" /> Contact
                 </Link>
 
-                {/* <li>
-                  <Link href="career" color="inherit" sx={linkStyle}>
+                <li>
+                  {/* <Link href="career" color="inherit" sx={linkStyle}>
                     <i className="fa fa-angle-right" /> career
-                  </Link>
-                  <li>
+                  </Link> */}
+                  {/* <li>
                     <Link href="career" color="inherit" sx={linkStyle}>
                       <i className="fa fa-angle-right" /> services
                     </Link>
-                  </li>{" "}
+                  </li>{" "} */}
                   <li>
                     <Link href="career" color="inherit" sx={linkStyle}>
                       <i className="fa fa-angle-right" /> portfolio
                     </Link>
                   </li>
-                </li> */}
+                </li>
               </li>
             </ul>
           </Grid>
