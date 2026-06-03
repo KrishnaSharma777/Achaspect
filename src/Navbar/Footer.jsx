@@ -114,7 +114,7 @@ const Footer = () => {
                     </Link>
                   </li>{" "} */}
                   <li>
-                    <Link href="career" color="inherit" sx={linkStyle}>
+                    <Link href="portfolio" color="inherit" sx={linkStyle}>
                       <i className="fa fa-angle-right" /> portfolio
                     </Link>
                   </li>
@@ -155,14 +155,14 @@ const Footer = () => {
                 >
                   <Facebook />
                 </Link>
-                <Link
+                {/* <Link
                   //   href="https://x.com/speedo_loan"
                   sx={{ ...iconStyle, backgroundColor: "#1DA1F2" }}
                 >
                   <Twitter />
-                </Link>
+                </Link> */}
                 <Link
-                  //   href="https://www.linkedin.com/company/speedo-loan/about/?viewAsMember=true "
+                    href="linkedin.com/in/tanmay-sharma-773874413 "
                   target="_blank"
                   sx={{ ...iconStyle, backgroundColor: "#0077B5" }}
                 >
@@ -176,7 +176,7 @@ const Footer = () => {
                   <Instagram />
                 </Link>
                 <Link
-                  //   href="https://www.youtube.com/@SpeedoLoan"
+                    href="https://www.youtube.com/channel/UCU8OKye8yYv28U8H60Nre2g"
                   target="_blank"
                   sx={{ ...iconStyle, backgroundColor: "#FF0000" }}
                 >

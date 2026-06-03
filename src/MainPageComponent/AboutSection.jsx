@@ -148,6 +148,7 @@ const AboutSection = () => {
                 >
                   <motion.div whileHover={{ scale: 1.1 }}>
                     <Button
+                    href="/about-us"
                       variant="contained"
                       sx={{
                         bgcolor: "#fff",
