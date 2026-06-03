@@ -66,8 +66,7 @@ const Footer = () => {
                   color="inherit"
                   style={{ display: "flex", alignItems: "center" }}
                 >
-                  <Phone style={{ marginRight: "5px" }} /> Phone: +91 94798
-                  77775
+                  <Phone style={{ marginRight: "5px" }} /> Phone:  91-7987967802
                 </Link>
               </li>
 
@@ -80,7 +79,7 @@ const Footer = () => {
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <LocationOn style={{ marginRight: "5px" }} />
-                  Address: A/180, block A, Anand Nagar, Bahodapur, Gwalior, MP
+                  Address:  Anand Nagar, Bahodapur, Gwalior, MP
                 </Link>
               </li>
             </ul>
@@ -151,7 +150,7 @@ const Footer = () => {
             <div>
               <Box mt={1} display="flex" gap={1}>
                 <Link
-                  //   href="https://www.facebook.com/profile.php?id=61567546377871"
+                    href="https://www.facebook.com/share/1CZyzhrnxt/"
                   sx={{ ...iconStyle, backgroundColor: "#4267B2" }}
                 >
                   <Facebook />
@@ -170,7 +169,7 @@ const Footer = () => {
                   <LinkedIn />
                 </Link>
                 <Link
-                  //   href=" https://www.instagram.com/speedo.loan/"
+                    href="https://www.instagram.com/archaspect_?igsh=NTkxbnY0Zm5teXl1"
                   target="_blank"
                   sx={{ ...iconStyle, backgroundColor: "#C13584" }}
                 >

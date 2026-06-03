@@ -30,7 +30,7 @@ const SupportBar = () => {
         <Typography
           sx={{ fontWeight: 600, fontSize: "15px", color: "#F26722" }}
         >
-          91-9479887775
+          91-7987967802
         </Typography>
       </Box>
 

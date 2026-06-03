@@ -83,7 +83,7 @@ const ContactUs = () => {
               Location
             </Typography>
             <Typography>
-              A/180, Anand Nagar, Bahodapur, Gwalior, Madhya Pradesh – 474012.
+              Anand Nagar, Bahodapur, Gwalior, Madhya Pradesh – 474012.
             </Typography>
           </Grid>
 

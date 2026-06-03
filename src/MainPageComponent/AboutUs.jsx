@@ -60,7 +60,7 @@ const AboutUs = () => {
                   sx={{ fontSize: "1.2rem", lineHeight: 2 }}
                 >
                   Archaspect is a Gwalior-based architectural firm founded in
-                  2024, with its office located at A/180, Anand Nagar,
+                  2024, with its office located at  Anand Nagar,
                   Bahodapur, Gwalior, Madhya Pradesh – 474012. Backed by over 10
                   years of experience in the field of architecture and design,
                   Archaspect brings a clear vision to life—creating sustainable,

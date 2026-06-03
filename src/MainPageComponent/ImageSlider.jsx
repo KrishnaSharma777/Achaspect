@@ -41,12 +41,12 @@ const ImageSlider = ({ images, duration = 4000 }) => {
         "Crafting innovative and functional designs tailored to your lifestyle and purpose",
     },
     {
-      text1: "Gandhi Park in Jaura",
+      text1: "Gandhi Park Joura",
       text2:
         "From concept to completion, we bring your architectural dreams to life",
     },
     {
-      text1: "Jaura Shopping Complex",
+      text1: "Mixed use building",
       text2:
         "With sustainable solutions, modern aesthetics, and thoughtful planning",
     },
