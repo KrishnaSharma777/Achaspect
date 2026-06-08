@@ -24,25 +24,25 @@ const projects = [
     title: "Jawa Showroom Interior",
     category: "Commercial Interior",
     location: "Gwalior, Madhya Pradesh",
-    image: project1,
+    image:"https://res.cloudinary.com/ddketghv2/image/upload/v1780483451/doxq2i06kn4nkj6t5kr5.jpg",
   },
   {
     title: "Chambal park Landscape Design",
     category: "Park & Landscape",
     location: "Morena, Madhya Pradesh",
-    image: project2,
+    image:"https://res.cloudinary.com/ddketghv2/image/upload/v1779703490/xj8ei8oysbsmvets9hkg.png",
   },
   {
     title: "Nagar Parisad Design",
     category: "Government Building",
     location: "Jaura, Madhya Pradesh",
-    image: project3,
+    image: "https://res.cloudinary.com/ddketghv2/image/upload/v1779703058/xj3mnz1pfgowmfvc9rno.jpg",
   },
   {
     title: "Bio Gas Plant",
     category: "Infrastructure Project",
     location: "Madhya Pradesh",
-    image: project4,
+    image: "https://res.cloudinary.com/ddketghv2/image/upload/v1779870731/wvcu9nzkw1jslbt5tvvl.png",
   },
 ];
 

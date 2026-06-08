@@ -52,7 +52,7 @@ const AboutSection = () => {
                 }}
               >
                 <motion.img
-                  src={Img1}
+                  src="https://res.cloudinary.com/ddketghv2/image/upload/v1779703058/xj3mnz1pfgowmfvc9rno.jpg"
                   alt="Experience"
                   style={{
                     width: "100%",
@@ -113,7 +113,7 @@ const AboutSection = () => {
                 }}
               >
                 <motion.img
-                  src={Img2}
+                  src="https://res.cloudinary.com/ddketghv2/image/upload/v1780565016/fxzvjxczpgoen6o4ddeg.jpg"
                   alt="Learn More"
                   style={{
                     width: "100%",
