@@ -60,8 +60,9 @@ export default function HomeAbout() {
           fontSize: "1.05rem",
         }}
       >
-        We create innovative architecture, urban planning,
-        landscape design and sustainable infrastructure
+        We create innovative architecture,landscape design
+         and
+        sustainable infrastructure
         solutions that transform communities and improve
         quality of life.
       </Typography>

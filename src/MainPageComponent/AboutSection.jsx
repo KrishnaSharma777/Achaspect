@@ -195,7 +195,7 @@ const AboutSection = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <Typography  variant="h2" sx={{ color: "#888", mb: 1 }}>
+              <Typography  variant="h2" sx={{ color: "#d39612", mb: 1 }}>
                 About Us
               </Typography>
             </motion.div>
