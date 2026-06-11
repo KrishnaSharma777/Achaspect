@@ -1,6 +1,5 @@
 import react from "react";
 import {  Box,Container, Typography } from "@mui/material";
-import homepage from "../assets/image/Black Blue Modern Construction Company LinkedIn Banner.png";
 // import ImageSlider from "./ImageSlider";
 // Banner image import
 // import Img2 from "../assets/image/MAIN GATE 2 .jpg";
@@ -102,16 +101,7 @@ export default function HomeAbout() {
           textAlign: "center",
         }}
       >
-        <Typography
-          sx={{
-            color: "#D4AF37",
-            fontWeight: 700,
-            mb: 1,
-          }}
-        >
-          DESIGN INSIGHT
-        </Typography>
-
+       
         <Typography
           sx={{
             color: "#fff",
