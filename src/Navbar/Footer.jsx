@@ -29,8 +29,8 @@ const Footer = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: "rgba(33, 33, 33, 0.7)", // Black overlay with some transparency
-          //   borderRadius: "10px",
+ background:
+          "linear-gradient(135deg,#0B1220 0%,#121250 100%)",          //   borderRadius: "10px",
         }}
       />
 

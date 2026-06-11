@@ -58,7 +58,7 @@ const ContactUs = () => {
             >
               Call
             </Typography>
-            <Typography sx={{ mb: 1 }}>+919479877775</Typography>
+            <Typography sx={{ mb: 1 }}>+917987967802</Typography>
 
             <Typography
               sx={{

@@ -5,7 +5,7 @@ import Header from "./Navbar/Header";
 import Footer from "./Navbar/Footer";
 import HomePage from "./MainPageComponent/HomePage";
 import MarqueeAlert from "./Navbar/MarqeeAlert";
-import Career from "./MainPageComponent/Career";
+// import Career from "./MainPageComponent/Career";
 import AboutUs from "./MainPageComponent/AboutUs";
 import ContactUs from "./MainPageComponent/ContactUs";
 import AdminPannel from "./AdminPannel";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/career" element={<Career />} />
+        {/* <Route path="/career" element={<Career />} /> */}
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
         <Route path="/login" element={<Login />} />

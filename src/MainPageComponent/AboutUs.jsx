@@ -57,7 +57,7 @@ const AboutUs = () => {
 
                 <Typography
                   variant="body1"
-                  sx={{ fontSize: "1.2rem", lineHeight: 2 }}
+                  sx={{ fontSize: "1.2rem", lineHeight: 2 , color: "rgb(18, 18, 80)"}}
                 >
                   Archaspect is a Gwalior-based architectural firm founded in
                   2024, with its office located at  Anand Nagar,

@@ -14,10 +14,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 // Replace these paths with your actual project images
-import project1 from "../assets/image/jawashowroom3.jpeg";
-import project2 from "../assets/image/2.png";
-import project3 from "../assets/image/1.jpg";
-import project4 from "../assets/image/biogas4.png";
+
 
 const projects = [
   {
@@ -52,7 +49,7 @@ export default function FeaturedProjects() {
       sx={{
         py: { xs: 2, md: 1 },
         background:
-          "linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%)",
+          "linear-gradient(180deg, #fdfbfb 0%, #f8f9fa 100%)",
       }}
     >
       <Container maxWidth="xl">

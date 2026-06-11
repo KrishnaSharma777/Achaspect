@@ -1,7 +1,6 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import Img1 from "../assets/image/15.jpg";
-import Img2 from "../assets/image/16.png";
+
 import { useEffect, useState } from "react";
 
 const AboutSection = () => {
@@ -83,6 +82,7 @@ const AboutSection = () => {
                     position: "absolute",
                     bottom: 12,
                     left: 12,
+                    color: "#000",
                     bgcolor: "#fff",
                     px: 2,
                     py: 0.5,
@@ -91,7 +91,7 @@ const AboutSection = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  10+ Years Experience
+                  8+ Years Experience
                 </Box>
               </Box>
             </motion.div>
@@ -195,7 +195,7 @@ const AboutSection = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <Typography sx={{ color: "#888", mb: 1 }}>
+              <Typography  variant="h2" sx={{ color: "#888", mb: 1 }}>
                 About Us
               </Typography>
             </motion.div>
@@ -209,6 +209,7 @@ const AboutSection = () => {
             >
               <Typography
                 sx={{
+                  color: "rgb(18, 18, 80)",
                   fontSize: { xs: "24px", md: "36px" },
                   fontWeight: "bold",
                   mb: 2,
@@ -225,8 +226,7 @@ const AboutSection = () => {
               }}
             >
               <Typography sx={{ color: "#555", mb: 3 }}>
-                Archaspect is a Gwalior-based architectural firm dedicated to
-                creating sustainable, functional, and visually stunning spaces.
+              We are a Gwalior-based architecture and design consultancy providing architectural design, interior design, landscape design, DPR preparation, project management, and turnkey execution services. With a commitment to innovation, sustainability, and quality, we deliver customized solutions for residential, commercial, institutional, and government projects across Madhya Pradesh and throughout India through both on-site and remote collaboration.
               </Typography>
             </motion.div>
 
