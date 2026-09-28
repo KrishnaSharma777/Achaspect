@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Grid, Container, Box } from "@mui/material";
 
 import aboutImage from "../assets/image/About.png";
+import SEO from "../components/SEO";
 
 
 
@@ -10,6 +11,12 @@ import aboutImage from "../assets/image/About.png";
 const AboutUs = () => {
   return (
     <>
+    <SEO
+  title="About Archaspect | Architecture Firm in Gwalior"
+  description="Learn about Archaspect, a Gwalior-based architecture and design firm founded in 2024, delivering sustainable residential, commercial and institutional architectural solutions."
+  canonical="/about-us"
+/>
+
    <Box
   sx={{
     position: "relative",
@@ -43,17 +50,18 @@ const AboutUs = () => {
           <Grid container spacing={4}>
             <Grid item xs={12}>
               <Box textAlign="center">
-                <Typography
-                  variant="h4"
-                  sx={{
-                    fontWeight: 700,
-                    color: "rgb(18, 18, 80)",
-                    textShadow: "1px 1px 2px black",
-                    mb: 3,
-                  }}
-                >
-                  Welcome to Archaspect
-                </Typography>
+               <Typography
+  component="h1"
+  variant="h4"
+  sx={{
+    fontWeight: 700,
+    color: "rgb(18, 18, 80)",
+    textShadow: "1px 1px 2px black",
+    mb: 3,
+  }}
+>
+  About Archaspect
+</Typography>
 
                 <Typography
                   variant="body1"

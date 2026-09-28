@@ -1,11 +1,17 @@
 import {  Grid, Typography, Box } from "@mui/material";
 import ContactUsImage from "../assets/image/reachout.png";
+import SEO from "../components/SEO";
 
 const ContactUs = () => {
   
   return (
     < >
-     
+     <SEO
+  title="Contact Archaspect | Architects in Gwalior"
+  description="Contact Archaspect in Gwalior, Madhya Pradesh for residential, commercial and institutional architecture and design services."
+  canonical="/contact-us"
+/>
+
       <Box
   sx={{
     position: "relative",
@@ -58,7 +64,10 @@ const ContactUs = () => {
             >
               Call
             </Typography>
-            <Typography sx={{ mb: 1 }}>+917987967802</Typography>
+            <Typography sx={{ mb: 1 }}><a href="tel:+917987967802">
+  +91 79879 67802
+</a>
+</Typography>
 
             <Typography
               sx={{
@@ -70,7 +79,10 @@ const ContactUs = () => {
             >
               Email
             </Typography>
-            <Typography sx={{ mb: 3 }}>info@archaspect.com</Typography>
+            <Typography sx={{ mb: 3 }}><a href="mailto:archaspect3@gmail.com">
+  archaspect3@gmail.com
+</a>
+</Typography>
 
             <Typography
               sx={{
