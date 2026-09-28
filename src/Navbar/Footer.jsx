@@ -162,7 +162,7 @@ const Footer = () => {
                   <Twitter />
                 </Link> */}
                 <Link
-                    href="linkedin.com/in/tanmay-sharma-773874413 "
+                    href="https://www.linkedin.com/in/tanmay-sharma-773874413/"
                   target="_blank"
                   sx={{ ...iconStyle, backgroundColor: "#0077B5" }}
                 >

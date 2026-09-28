@@ -27,7 +27,11 @@ const Portfolio = () => {
   const categories = ["All", ...new Set(data.map((p) => p.category))];
 
   return (
-    <Box p={4}>
+    <> Title:
+Portfolio | Archaspect
+
+Description:
+Explore architectural and design projects by Archaspect.    <Box p={4}>
       <Typography variant="h4" mb={2}>
         My Projects 🚀
       </Typography>
@@ -99,6 +103,8 @@ const Portfolio = () => {
         </Button>
       )}
     </Box>
+    </>
+
   );
 };
 
