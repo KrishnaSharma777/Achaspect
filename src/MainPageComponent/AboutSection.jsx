@@ -114,7 +114,7 @@ const AboutSection = () => {
               >
                 <motion.img
                   src="https://res.cloudinary.com/ddketghv2/image/upload/v1780565016/fxzvjxczpgoen6o4ddeg.jpg"
-                  alt="Learn More"
+                  alt="Learn MoreArchaspect architectural design and consultancy"
                   style={{
                     width: "100%",
                     height: "350px",
@@ -147,23 +147,24 @@ const AboutSection = () => {
                   }}
                 >
                   <motion.div whileHover={{ scale: 1.1 }}>
-                    <Button
-                    href="/about-us"
-                      variant="contained"
-                      sx={{
-                        bgcolor: "#fff",
-                        color: "#000",
-                        borderRadius: "20px",
-                        px: 3,
-                        fontWeight: "bold",
-                        "&:hover": {
-                          bgcolor: "#000",
-                          color: "#fff",
-                        },
-                      }}
-                    >
-                      Learn More
-                    </Button>
+                  <Button
+                  href="/about-us"
+                  variant="contained"
+                  aria-label="Learn more about Archaspect"
+                  sx={{
+                    bgcolor: "#fff",
+                    color: "#000",
+                    borderRadius: "20px",
+                    px: 3,
+                    fontWeight: "bold",
+                    "&:hover": {
+                      bgcolor: "#000",
+                      color: "#fff",
+                    },
+                  }}
+                >
+                  About Archaspect
+                </Button>     
                   </motion.div>
                 </Box>
               </Box>
