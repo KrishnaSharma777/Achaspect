@@ -31,6 +31,7 @@ const [loading, setLoading] = useState(false);
     title: "",
     category: "",
     description: "",
+    location: "",
   });
 
   const [images, setImages] = useState([]);
@@ -107,6 +108,7 @@ const [loading, setLoading] = useState(false);
         title: "",
         category: "",
         description: "",
+        location: "",
       });
 
       setImages([]);
@@ -141,6 +143,7 @@ const [loading, setLoading] = useState(false);
       await updateDoc(ref, {
         title: editProject.title,
         category: editProject.category,
+        location: editProject.location,
         description: editProject.description,
         images: finalImages,
         coverImage: finalImages[0] || "",
@@ -205,6 +208,18 @@ const [loading, setLoading] = useState(false);
               setForm({
                 ...form,
                 category: e.target.value,
+              })
+            }
+          />
+          <TextField
+            fullWidth
+            label="Location"
+            sx={{ mb: 2 }}
+            value={form.location}
+            onChange={(e) =>
+              setForm({
+                ...form,
+                location: e.target.value,
               })
             }
           />
@@ -377,6 +392,14 @@ const [loading, setLoading] = useState(false);
             >
               {p.category}
             </Typography>
+            <Typography
+              sx={{
+                color: "#666",
+                fontSize: "14px",
+              }}
+            >
+              {p.location}
+            </Typography>
           </Box>
         </Box>
 
@@ -460,7 +483,18 @@ const [loading, setLoading] = useState(false);
                   })
                 }
               />
-
+               <TextField
+                fullWidth
+                label="Location"  
+              sx={{ mb: 2 }}
+                value={editProject.location}
+                onChange={(e) =>
+                  setEditProject({
+                    ...editProject,
+                    location: e.target.value,
+                  })
+                }
+              />
               <TextField
                 fullWidth
                 multiline
