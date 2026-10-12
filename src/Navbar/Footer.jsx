@@ -169,7 +169,7 @@ const Footer = () => {
                   <LinkedIn />
                 </Link>
                 <Link
-                    href="https://www.instagram.com/archaspect_?igsh=NTkxbnY0Zm5teXl1"
+                    href="https://www.instagram.com/archaspect.in/"
                   target="_blank"
                   sx={{ ...iconStyle, backgroundColor: "#C13584" }}
                 >
@@ -205,7 +205,7 @@ const Footer = () => {
             // textShadow: "1px 1px 2px rgba(0, 0, 0, 0.7)",
           }}
         >
-          Copyright &copy; 2025 Archaspect. All Rights Reserved.
+          Copyright &copy; 20256Archaspect. All Rights Reserved.
         </Typography>
       </Box>
     </footer>

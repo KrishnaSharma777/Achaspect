@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /login
+Disallow: /dashboard
+Disallow: /admin
+
+Sitemap: https://www.archaspect.com/sitemap.xml
